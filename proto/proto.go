@@ -18,6 +18,7 @@ package proto
 
 import (
 	"bytes"
+
 	"github.com/buger/gor/byteutils"
 )
 
@@ -295,7 +296,7 @@ func Status(payload []byte) []byte {
 }
 
 var httpMethods []string = []string{
-	"GET ", "OPTI", "HEAD", "POST", "PUT ", "DELE", "TRAC", "CONN",
+	"GET ", "OPTI", "HEAD", "POST", "PUT ", "DELE", "TRAC", "CONN", "BAN ",
 }
 
 func IsHTTPPayload(payload []byte) bool {
